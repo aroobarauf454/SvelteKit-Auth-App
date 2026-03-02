@@ -175,46 +175,10 @@
 		</div>
 	</section>
 
-	<!-- Bottom CTA -->
-	<section in:fly={{ y: 20, duration: 600, delay: 1400 }} class="bg-white px-4 py-20">
-		<div class="mx-auto max-w-2xl text-center">
-			<h2 class="mb-4 text-3xl font-bold text-gray-900">Ready to Get Started?</h2>
-			<p class="mb-8 text-gray-600">
-				Create your account in seconds and start building with secure authentication.
-			</p>
-			{#if !data.session}
-				<a
-					href="/register"
-					class="group inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-8 py-3.5 text-lg font-semibold text-white shadow-lg shadow-indigo-200 transition-all duration-200 hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-300"
-				>
-					Create Free Account
-					<span class="inline-block transition-transform duration-200 group-hover:translate-x-1"
-						>→</span
-					>
-				</a>
-			{:else}
-				<a
-					href="/dashboard"
-					class="group inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-8 py-3.5 text-lg font-semibold text-white shadow-lg shadow-indigo-200 transition-all duration-200 hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-300"
-				>
-					Go to Dashboard
-					<span class="inline-block transition-transform duration-200 group-hover:translate-x-1"
-						>→</span
-					>
-				</a>
-			{/if}
-		</div>
-	</section>
-
 	<!-- Footer -->
 	<footer in:fade={{ duration: 600, delay: 1400 }} class="border-t border-gray-100 bg-gray-50 px-4 py-10">
 		<div class="mx-auto flex max-w-6xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
 			<Logo size="sm" />
-			<nav class="flex gap-6 text-sm text-gray-500">
-				<a href="/login" class="transition hover:text-gray-900">Sign In</a>
-				<a href="/register" class="transition hover:text-gray-900">Register</a>
-				<a href="/dashboard" class="transition hover:text-gray-900">Dashboard</a>
-			</nav>
 			<p class="text-sm text-gray-400">&copy; {new Date().getFullYear()} AuthKit</p>
 		</div>
 	</footer>
